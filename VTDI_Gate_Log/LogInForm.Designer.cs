@@ -1,0 +1,137 @@
+﻿namespace VTDI_Gate_Log
+{
+    partial class LogInForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lbl_user_name = new System.Windows.Forms.Label();
+            this.lbl_password = new System.Windows.Forms.Label();
+            this.tb_user_name = new System.Windows.Forms.TextBox();
+            this.tb_password = new System.Windows.Forms.TextBox();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.Btn_Submit = new System.Windows.Forms.Button();
+            this.Btn_Cancel = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // lbl_user_name
+            // 
+            this.lbl_user_name.AutoSize = true;
+            this.lbl_user_name.Font = new System.Drawing.Font("Chiller", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_user_name.Location = new System.Drawing.Point(22, 103);
+            this.lbl_user_name.Name = "lbl_user_name";
+            this.lbl_user_name.Size = new System.Drawing.Size(134, 39);
+            this.lbl_user_name.TabIndex = 0;
+            this.lbl_user_name.Text = "User Name";
+            // 
+            // lbl_password
+            // 
+            this.lbl_password.AutoSize = true;
+            this.lbl_password.Font = new System.Drawing.Font("Chiller", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_password.Location = new System.Drawing.Point(22, 177);
+            this.lbl_password.Name = "lbl_password";
+            this.lbl_password.Size = new System.Drawing.Size(108, 39);
+            this.lbl_password.TabIndex = 1;
+            this.lbl_password.Text = "Password";
+            // 
+            // tb_user_name
+            // 
+            this.tb_user_name.Font = new System.Drawing.Font("Chiller", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_user_name.Location = new System.Drawing.Point(225, 96);
+            this.tb_user_name.Name = "tb_user_name";
+            this.tb_user_name.Size = new System.Drawing.Size(313, 46);
+            this.tb_user_name.TabIndex = 2;
+            // 
+            // tb_password
+            // 
+            this.tb_password.Font = new System.Drawing.Font("Chiller", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_password.Location = new System.Drawing.Point(225, 170);
+            this.tb_password.Name = "tb_password";
+            this.tb_password.Size = new System.Drawing.Size(313, 46);
+            this.tb_password.TabIndex = 3;
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Chiller", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lbl_title.Location = new System.Drawing.Point(173, 20);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(184, 56);
+            this.lbl_title.TabIndex = 4;
+            this.lbl_title.Text = "User Login";
+            // 
+            // Btn_Submit
+            // 
+            this.Btn_Submit.Font = new System.Drawing.Font("Chiller", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Submit.Location = new System.Drawing.Point(463, 246);
+            this.Btn_Submit.Name = "Btn_Submit";
+            this.Btn_Submit.Size = new System.Drawing.Size(75, 31);
+            this.Btn_Submit.TabIndex = 5;
+            this.Btn_Submit.Text = "Submit";
+            this.Btn_Submit.UseVisualStyleBackColor = true;
+            this.Btn_Submit.Click += new System.EventHandler(this.Btn_Submit_Click);
+            // 
+            // Btn_Cancel
+            // 
+            this.Btn_Cancel.Font = new System.Drawing.Font("Chiller", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Cancel.Location = new System.Drawing.Point(371, 246);
+            this.Btn_Cancel.Name = "Btn_Cancel";
+            this.Btn_Cancel.Size = new System.Drawing.Size(75, 31);
+            this.Btn_Cancel.TabIndex = 6;
+            this.Btn_Cancel.Text = "Cancel";
+            this.Btn_Cancel.UseVisualStyleBackColor = true;
+            // 
+            // LogInForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(564, 308);
+            this.Controls.Add(this.Btn_Cancel);
+            this.Controls.Add(this.Btn_Submit);
+            this.Controls.Add(this.lbl_title);
+            this.Controls.Add(this.tb_password);
+            this.Controls.Add(this.tb_user_name);
+            this.Controls.Add(this.lbl_password);
+            this.Controls.Add(this.lbl_user_name);
+            this.Name = "LogInForm";
+            this.Text = "Log In";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lbl_user_name;
+        private System.Windows.Forms.Label lbl_password;
+        private System.Windows.Forms.TextBox tb_user_name;
+        private System.Windows.Forms.TextBox tb_password;
+        private System.Windows.Forms.Label lbl_title;
+        private System.Windows.Forms.Button Btn_Submit;
+        private System.Windows.Forms.Button Btn_Cancel;
+    }
+}
