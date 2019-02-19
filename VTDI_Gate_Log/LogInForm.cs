@@ -19,7 +19,23 @@ namespace VTDI_Gate_Log
 
         private void Btn_Submit_Click(object sender, EventArgs e)
         {
+            var username = tb_user_name.Text;
+            var password = tb_password.Text;
 
+            if(username == "Kedon" && password == "ABC123")
+            //OR if(String.Compare("Kedon",username) && String.Compare("ABC123",password)
+            {
+                MessageBox.Show("Successful login " + tb_user_name.Text);
+                var parent = (Form1)MdiParent;
+                //OR
+                //var parent = MdiParent is Form1;
+                parent.isLoggedIn = true;
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Please try again!");
+            }
         }
     }
 }
