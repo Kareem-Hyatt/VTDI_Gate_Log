@@ -1,6 +1,6 @@
 ﻿namespace VTDI_Gate_Log
 {
-    partial class GateInOut
+    partial class GateLogForm
     {
         /// <summary>
         /// Required designer variable.
@@ -245,7 +245,7 @@
             this.Btn_Submit.Text = "Submit";
             this.Btn_Submit.UseVisualStyleBackColor = true;
             // 
-            // GateInOut
+            // GateLogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -254,9 +254,8 @@
             this.Controls.Add(this.Btn_Submit);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "GateInOut";
-            this.Text = "GateInOut";
-            this.Load += new System.EventHandler(this.GateInOut_Load);
+            this.Name = "GateLogForm";
+            this.Text = "Gate Log";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -284,4 +283,5 @@
         private System.Windows.Forms.Button Btn_Cancel;
         private System.Windows.Forms.Button Btn_Submit;
     }
+
 }

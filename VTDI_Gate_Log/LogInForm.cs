@@ -22,10 +22,18 @@ namespace VTDI_Gate_Log
             var username = tb_user_name.Text;
             var password = tb_password.Text;
 
-            if(username == "Kedon" && password == "ABC123")
+            //ctx is an object of the database. It means "context" which is what the diagram represents
+            var ctx = new Vtdi_Gate_DatabaseEntities();
+            //using a lambda expression to check if the user name entered matches the user name in the database
+            var user = ctx.Users.Any(q => q.UserName == username && q.Password == password);
+
+
+            if (user == true)
             //OR if(String.Compare("Kedon",username) && String.Compare("ABC123",password)
             {
-                MessageBox.Show("Successful login " + tb_user_name.Text);
+                MessageBox.Show("Welcome " + tb_user_name.Text);
+                //OR
+                //MessageBox.Show($"Welcome {username}");
                 var parent = (Form1)MdiParent;
                 //OR
                 //var parent = MdiParent is Form1;

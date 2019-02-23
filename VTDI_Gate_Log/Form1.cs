@@ -59,7 +59,7 @@ namespace VTDI_Gate_Log
             if (this.isLoggedIn)
             {
                 //MessageBox.Show("Gate In/Out Clicked");
-                GateInOut logIn = new GateInOut();
+                GateLogForm logIn = new GateLogForm();
                 logIn.MdiParent = this;
                 logIn.Show();
             }

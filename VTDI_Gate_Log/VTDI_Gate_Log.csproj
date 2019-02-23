@@ -67,8 +67,11 @@
     <Compile Include="GateInOut.cs">
       <DependentUpon>VTDI_gate_model.tt</DependentUpon>
     </Compile>
-    <Compile Include="GateInOut.Designer.cs">
-      <DependentUpon>GateInOut.cs</DependentUpon>
+    <Compile Include="GateLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GateLogForm.Designer.cs">
+      <DependentUpon>GateLogForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Gender.cs">
       <DependentUpon>VTDI_gate_model.tt</DependentUpon>
@@ -110,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GateInOut.resx">
       <DependentUpon>GateInOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateLogForm.resx">
+      <DependentUpon>GateLogForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
